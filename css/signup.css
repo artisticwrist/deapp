@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+body p.signin-login{
+    font-size: 12px;
+}
+
+.error-input{
+    color: red;
+    font-size: 12px;
+}
+
+p a{
+    text-decoration: none;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(192, 192, 192, 0.349);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+form h1 a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.856);
+}
+
+label{
+    width: 100%;
+    text-align: left;
+}
+
+form h1, form p{
+    padding: 0%;
+    margin: 0;
+}
+
+
+form .form-box{
+    width: 100%;
+    display: flex;
+}
+
+.form-box :nth-child(n){
+    padding: 10px;
+}
+
+.form-box input{
+    flex-grow: 1;
+}
+
+form :nth-child(n){
+    margin: 5px 0px;
+}
+
+form input{
+    border-radius: 5px;
+    border: none;
+    border: 1px solid silver;
+}
+
+form button{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background: royalblue;
+    color: white;
+    border-radius: 5px;
+}
+
+.form-css img{
+    width: 120px !important;
+}
+
+@media only screen and (max-width:768px){
+    form{
+        border: none;
+}
+
+}

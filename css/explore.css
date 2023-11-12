@@ -1,0 +1,463 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.content {
+  width: 100%;
+  display: none;
+}
+
+.display-none {
+  display: none !important;
+}
+
+.user-not-found-message{
+  padding: 20px;
+}
+
+
+.onload-screen {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: white;
+}
+
+.after-load {
+  display: flex;
+}
+
+#header-display {
+  display: none;
+}
+
+.main-page {
+  display: flex;
+  width: 100%;
+}
+
+.explore {
+  height: inherit;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: #ffff;
+  align-items: center;
+}
+
+.logo{
+  width: 90px;
+  margin-left: 5px;
+}
+
+.header ul {
+  margin-right: 5px;
+}
+
+.header ul {
+  display: flex;
+  align-items: center;
+}
+
+.header ul li {
+  list-style-type: none;
+  padding: 0px 10px;
+}
+
+.header li a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.788);
+}
+
+.img-box {
+  width: 100%;
+  margin: 0px;
+}
+
+.img-box img {
+  width: 100%;
+}
+
+
+.user-profile {
+  position: sticky;
+  background: white;
+  top: 8%;
+}
+
+.user-section {
+  width: 50%;
+  height: 100vh;
+  position: fixed;
+  right: 0%;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-section #not-signed-in {
+  margin: auto;
+}
+
+#not-signed-in img{
+  width: 150px;
+}
+
+.profile,
+.followers__post {
+  display: flex;
+  align-items: center;
+}
+
+.followers__post {
+  margin: 10px 25px;
+}
+
+.followers__post h2,
+.followers__post p {
+  text-align: center;
+  margin: 0px;
+}
+
+.followers__post h2 {
+  font-size: 19px;
+}
+
+.followers__post p {
+  font-size: 14px;
+}
+
+.followers__post .flex {
+  margin: 0px 7px;
+}
+
+.profile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  background: rgb(235, 235, 235);
+  margin: 0px 5px;
+}
+
+.btn-upload-edit {
+  display: flex;
+  align-items: center;
+}
+
+.btn-upload-edit button {
+  text-decoration: underline;
+  border: none;
+  color: black;
+  background: none;
+  border-radius: 5px;
+}
+
+.btn-upload-edit :nth-child(2) {
+  margin-left: 10px;
+}
+
+.user-uploads {
+  margin: 5px 0px;
+  padding-left: 5px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  height: 50vh;
+  overflow: scroll;
+  
+}
+
+.user-uploads img {
+  border: 1px solid white;
+  width: 32%;
+  height: 200px;
+}
+
+.description {
+  padding: 15px 5px;
+}
+
+.description h1,
+.description p,
+.description button, .description h5 {
+  margin: 3px 0px;
+}
+
+.description p {
+  font-size: 14px;
+}
+
+.description span {
+  display: flex;
+  align-items: center;
+}
+
+.description span p {
+  margin-left: 5px;
+}
+/* FOOTER TOOGLE */
+
+footer {
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: rgb(82, 33, 33);
+  padding: 0;
+  margin: 0;
+}
+
+footer ul {
+  display: flex;
+  background: white;
+  padding: 0;
+  margin: 0;
+  padding: 5px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+footer ul li {
+  list-style-type: none;
+  margin: 10px;
+  color: rgb(80, 80, 80);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.bottom-padding {
+  padding: 50px 0px;
+  color: rgba(0, 0, 0, 0.555);
+  font-size: 12px;
+  text-align: center;
+  position: relative;
+}
+
+/* modal */
+
+section.modal {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0%;
+  left: 0%;
+  background: rgba(0, 0, 0, 0.79);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-post {
+  display: flex;
+  align-items: center;
+  width: 65%;
+}
+
+.modal-post img {
+  width: 30%;
+  border-radius: 5px;
+}
+
+.modal-post p {
+  color: white;
+  margin: 50px;
+  line-height: 30px;
+}
+
+.upload-post {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.upload-post form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  width: 100px;
+  background: royalblue;
+}
+
+.upload-post form :nth-child(n) {
+  margin: 10px 0px;
+}
+
+/* USERS LIST */
+
+.users-list {
+  display: none;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-box {
+  text-align: center;
+  border: none;
+  width: 100%;
+  position: sticky;
+  top: 10%;
+  padding: 20px 0px;
+  background: white;
+}
+
+.search-box input {
+  padding: 7px;
+  border-radius: 50px;
+  width: 60%;
+  border: none;
+  border: 1px solid silver;
+}
+
+.users-ul-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 70px;
+}
+
+.users-ul-list li {
+  list-style-type: none;
+  padding: 5px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.users-ul-list li img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(192, 192, 192, 0.39);
+  margin: 10px 0px;
+}
+
+@media only screen and (max-width: 1250px) {
+  .explore {
+    width: 45%;
+  }
+
+  .user-section {
+    width: 55%;
+  }
+
+  .profile img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .followers__post .flex {
+    margin: 0px 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .display-none-large{
+    display: none !important;
+  }
+
+  #header-display {
+    display: flex;
+  }
+
+  .modal-post {
+    flex-direction: column;
+  }
+
+  .modal-post img {
+    width: 50%;
+  }
+
+  .modal-post p {
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    margin: 20px;
+  }
+
+  .explore {
+    width: 100%;
+  }
+
+  .large-view{
+    display: none;
+  }
+
+  header.profile {
+    margin: 20px 0px;
+  }
+  .profile img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .followers__post {
+    justify-content: center;
+    width: 50%;
+  }
+
+  .user-section {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 10px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .user-uploads {
+    overflow: unset;
+    height: fit-content;
+    padding-left: 0px;
+    margin: 0;
+    width: 95%;
+    margin-left: 5px;
+  }
+
+  .user-uploads img {
+    border: 1px solid white;
+    height: unset;
+  }
+
+  .bottom-padding {
+    padding: 70px;
+  }
+
+  footer {
+    display: flex;
+  }
+}
